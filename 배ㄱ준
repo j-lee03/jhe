@@ -1,0 +1,37 @@
+# 문제 제목:오타맨 고창영 
+
+## 문제 정보
+- **출처:** 
+- **난이도:** Easy, Medium, Hard 중 하나.Hard 
+
+## 문제 설명
+고창영은 맨날 오타를 낸다. 창영이가 오타를 낸 문장과 오타를 낸 위치가 주어졌을 때, 오타를 지운 문자열을 출력하는 프로그램을 작성하시오.
+
+창영이는 오타를 반드시 1개만 낸다.
+
+## 해결 과정
+강사님문제풀이및 피드백
+### 접근 방법
+이전코드 참고
+## 코드
+```python
+import sys
+
+
+
+t = int(input(""))
+
+for i in range(t):
+        line = input("")
+        line_parts = line.split()
+
+    
+
+        position = int(line_parts[0])
+        typo_word = line_parts[1]
+
+        index_to_remove = position - 1
+
+        corrected_word = typo_word[:index_to_remove] + typo_word[index_to_remove + 1:]
+
+        print(corrected_word)
